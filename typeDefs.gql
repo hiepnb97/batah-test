@@ -1,0 +1,511 @@
+type User {
+  id: ID!
+  joinDate: String!
+  updatedAt: String!
+  firstName: String!
+  lastName: String!
+  email: String!
+  password: String!
+  phone: String
+  ownedOffices: [Office!]!
+  location: Location
+  bookings: [Booking!]!
+  paymentAccount: [PaymentAccount!]!
+  sentMessages: [Message!]!
+  receivedMessages: [Message!]!
+  avatar: String!
+  userType: String
+  identity: [String!]
+  role: String
+  address: String
+  bookmarks: [String!]
+  paypal: String
+}
+
+type Office {
+  id: ID!
+  title: String!
+  searchTitle: String!
+  address: String!
+  category: String!
+  shortDescription: String!
+  description: String!
+  size: Int!
+  phone: String
+  website: String
+  email: String
+  numSeats: Int!
+  reviews: [Review!]
+  amenities: [String!]!
+  host: User!
+  pricing: Pricing!
+  location: Location!
+  views: Views!
+  policies: Policies
+  officeRules: OfficeRules
+  bookings: [Booking!]!
+  pictures: [String!]!
+  popularity: Int!
+  tags: [String!]!
+  status: String
+}
+
+type Pricing {
+  id: ID!
+  office: Office!
+  smartPricing: Boolean!
+  basePrice: Int!
+  minPrice: Int!
+  maxPrice: Int!
+}
+
+type Policies {
+  id: ID!
+  govIssuedId: Boolean!
+  minUsingTime: Int!
+  additionalPolicies: String
+}
+
+type OfficeRules {
+  id: ID!
+  smokingAllowed: Boolean!
+  partiesAndEventsAllowed: Boolean!
+  additionalRules: String
+}
+
+type Views {
+  id: ID!
+  office: Office!
+  numView: Int!
+  numBooking: Int!
+}
+
+type Location {
+  id: ID!
+  lat: Float!
+  lng: Float!
+  neighbourHood: Neighbourhood
+  address: String!
+  directions: String
+}
+
+type Neighbourhood {
+  id: ID!
+  locations: [Location!]!
+  name: String!
+  placePreview: [String]
+  city: City!
+  popularity: Int!
+}
+
+type City {
+  id: ID!
+  name: String!
+  neighbourhoods: [Neighbourhood!]!
+}
+
+type Review {
+  id: ID!
+  createdAt: String!
+  text: String!
+  stars: Float!
+  cleanliness: Int!
+  accuracy: Int!
+  location: Int!
+  checkIn: Int!
+  office: Office!
+  user: User!
+  pictures: [String!]
+}
+
+type AvailableSchedule {
+  id: ID!
+  office: ID!
+  date: String!
+  slots: [Int!]!
+}
+
+type BookedSchedule {
+  id: ID!
+  office: ID!
+  date: String!
+  slots: [Int!]!
+}
+
+type Booking {
+  id: ID!
+  createdAt: String!
+  bookee: User
+  office: Office!
+  bookedSchedules: BookedSchedule!
+  payment: Payment!
+  firstName:String!
+  lastName: String!
+  email: String!
+  phone: String!
+  identity: [String!]!
+}
+
+type Payment {
+  id: ID!
+  createdAt: String!
+  serviceFee: Float!
+  officePrice: Float!
+  totalPrice: Float!
+  paymentMethod: PaymentAccount!
+}
+
+type PaymentAccount {
+  id: ID!
+  createdAt: String!
+  type: String! #PAYMENT_PROVIDER
+  paypal: PaypalInformation
+  creditcard: CreditCardInformation
+}
+
+type PaypalInformation {
+  id: ID!
+  createdAt: String!
+  email: String!
+}
+
+type CreditCardInformation {
+  id: ID!
+  createdAt: String!
+  cardNumber: String!
+  expiresOnMonth: Int!
+  expiresOnYear: Int!
+  securityCode: String!
+  fullName: String!
+  country: String!
+}
+
+type Message {
+  id: ID!
+  createdAt: String!
+  from: User!
+  to: User!
+  readAt: String
+  content: String!
+}
+
+type Notification {
+  id: ID!
+  createdAt: String!
+  type: String!
+  user: User!
+  message: String!
+  office: Office!
+}
+
+type Revenue {
+  id: ID!
+  host: User!
+  total: Float!
+  withdrawable: Float!
+}
+
+type PayoutPending {
+  id: ID!
+  createdAt: String!
+  host: User!
+  money: Float!
+  status: String!
+}
+
+enum CURRENCY {
+  EUR
+  JPY
+  USD
+  VND
+}
+
+enum OFFICE_TYPES {
+  MEETING
+  TEACHING
+  TALKSHOW
+}
+
+enum PAYMENT_PROVIDER {
+  PAYPAL
+  CREDIT_CARD
+}
+
+enum NOTIFICATION_TYPE {
+  APPROVE
+  BOOK
+  REVIEW
+}
+type Conversation {
+  id: ID!
+  withPerson: User!
+  messages: [Message!]!
+  createdAt: String!
+  read: Boolean!
+}
+
+type Query {
+  me: User!
+  getCurrentUser: User
+  searchTitle(searchTerm: String): [Office!]
+  searchOffice(searchTerm: String, area: AreaInput, category: String! page:Int): searchOfficesPayload!
+  getOffices: getOfficesPayload
+  getOffice(id: String!): Office!
+  searchOfficeByFilter(id: [ID!]!, minSize: Int, maxSize: Int, minNumSeats: Int, maxNumSeats: Int, minPrice: Int, maxPice: Int, amenities: [String!]): [Office!]
+  topBookingOffice: [Office!]!
+  getNumOffice: [Int!]!
+  getAvailableSchedule(office: ID!, startDate: String, endDate: String): [AvailableSchedule!]
+  getBookedSchedule(office: ID!, startDate: String, endDate: String): [BookedSchedule!]
+  getInvoice(bookingId: String!): Booking
+  getBookingByGuest: [Booking!]
+  getBookingByHost: [Booking!]
+  getTotalPrice(office: ID): Price!
+  getMessages: [Conversation!]!
+  addView: Views
+  getDashboard: DashBoard!
+  canReview(office: ID!): Boolean!
+  getBookmarks: [Office!]
+  getRevenue: RevenuePayload!
+  getVisitorReviews: [Review!]
+  getUserReviews: [Review!]
+  getOfficeByStatus: OfficeByStatusPayload!
+  getAdminRevenue: AdminRevenuePayload!
+}
+type getOfficesPayload {
+  offices: [Office!]
+  booking: [Booking!]
+}
+type AdminRevenuePayload {
+  revenue: [Revenue!],
+        total: Float!,
+        bookings: Int!,
+        payouts: [PayoutPending!]
+        balance: Float!
+}
+
+type OfficeByStatusPayload {
+  active: [Office!]
+  pending: [Office!]
+  deactive: [Office!]
+}
+
+type RevenuePayload {
+  revenue: Revenue!
+  bookings: [Booking!]
+  payoutHistories: [PayoutPending!]
+}
+type FoundOffices {
+  id: ID!
+  availableSchedule: [String!]
+  title: String!
+  address: String!
+  category: String!
+  shortDescription: String!
+  description: String!
+  size: Int!
+  numSeats: Int!
+  reviews: [Review!]
+  amenities: [String!]!
+  pricing: Pricing!
+  location: Location!
+  pictures: [String!]!
+  tags: [String!]!
+  status: String
+}
+
+type searchOfficesPayload {
+  foundOffices: [FoundOffices!]
+  hasMore: Boolean!
+}
+
+type DashBoard {
+  activeOffices: Int!
+  totalViews: Int!
+  totalBooking: Int!
+  totalReviews: Int!
+  notifies: [Notification!]
+}
+
+type Price{
+  price: Float
+}
+
+input AreaInput{
+  ga: BoundInput
+  ma: BoundInput
+}
+
+input BoundInput{
+  from: Float
+  to: Float
+}
+
+type Mutation {
+  setPassword(password: String! confirmPassword: String!): User!
+  changePassword(currentPassword: String! password: String! confirmPassword: String!): User!
+  reqResetPassword(email: String!): Boolean!
+  resetPassword(token: String! password:String!): Boolean!
+  signup(
+    email: String!
+    password: String!
+    firstName: String!
+    lastName: String!
+  ): AuthPayload!
+  login(email: String!, password: String!): AuthPayload!
+  loginGoogle(token: String!): AuthPayload!
+  signinUser(token: String!, type: String!): Token!
+  updateProfile(
+    firstName: String!
+    lastName: String!
+    email: String!
+    phone: String
+    avatar: String!
+    identity: [String]
+    address: String
+  ): User!
+  updateIdentity(identity: [String!]!): User!
+  createList(
+    city: String!
+    size: Int!
+    title: String!
+    category: String!
+    address: String!
+    description: String!
+    shortDescription: String!
+    phone: String!
+    website: String
+    email: String
+    amenities: [String!]!
+    numSeats: Int!
+    location: LocationInput!
+    tags: [String!]!
+    pricing: PriceInput!
+    officeRules: RuleInput!
+    schedule: [AvailableDays!]!
+    pictures: [String!]!
+  ): Office!
+  updateOffice(
+    officeId: String!
+    city: String!
+    size: Int!
+    title: String!
+    category: String!
+    address: String!
+    description: String!
+    shortDescription: String!
+    phone: String!
+    website: String
+    email: String
+    amenities: [String!]!
+    numSeats: Int!
+    location: LocationInput!
+    tags: [String!]!
+    pricing: PriceInput!
+    officeRules: RuleInput!
+  ): Office!
+  updateOfficeImages(officeId: String! pictures: [String!]!): Office!
+  updateOfficeSchedule(officeId: String! schedule: [AvailableDays!]!): Boolean!
+  createReview(text: String!
+    cleanliness: Int!
+    accuracy: Int!
+    location: Int!
+    checkIn: Int!
+    office: String!
+    pictures: [String!]): Review!
+  createBooking(
+    bookedSchedules: BookedScheduleInput!
+  ): Booking!
+  createBookedSchedule(
+    office: ID!
+    date: String!
+    slots: [Int!]!
+  ): BookedSchedule!
+  createAvailableSchedule(
+    office: ID!
+    date: String!
+    slots: [Int!]!
+  ): AvailableSchedule!
+  deleteAvailableSchedule(
+    office: ID!
+    startDate: String!
+    endDate: String!
+  ): Boolean!
+  createPayment(
+    serviceFee: Float!
+    officePrice: Float!
+    numHours: Int!
+    paymentMethod: ID!
+  ): Payment!
+  createPaymentAccount(
+    type: String!
+    paypal: ID
+    creditcard: ID
+  ): PaymentAccount!
+  createPaypalInformation(
+    email: String!
+  ): PaypalInformation!
+  createCreditCardInformation(
+    cardNumber: String!
+    expiresOnMonth: Int!
+    expiresOnYear: Int!
+    securityCode: String!
+    fullName: String!
+    country: String!
+  ): CreditCardInformation!
+  createMessage(to: ID! content: String!): Message!
+  sendAdmin(content: String!): Message!
+  updateMessage(id: ID!): Message!
+  createViews(office: ID!): Views!
+  addViewsBooking(office: ID!): Views!
+  addViewsView(office: ID!): Views!
+  createRevenue(host: ID!): Revenue!
+  addMoneyToRevenue(host: ID! money: Float!): Revenue!
+  withdrawRevenue: WithdrawRevenuePayload!
+  bookmarkOffice(office: ID!): String!
+  unBookmarkOffice(office: ID!): String!
+  acceptPayoutPending(payoutId: ID!): PayoutPending!
+  createPayoutPending(host: ID! money: Float!): PayoutPending!
+  acceptOfficeStatus(office: ID!): Office!
+  approveOffice(office: ID!): Office
+  rejectOffice(office: ID!): Office
+}
+
+type WithdrawRevenuePayload {
+  revenue: Revenue!
+  payout: PayoutPending!
+}
+
+input BookedScheduleInput {
+  office: ID!
+    date: String!
+    slots: [Int!]!
+    firstName: String! lastName: String! email:String! phone:String!
+    identity: [String!]!
+}
+input ScheduleInput {
+    date: String!
+    slots: [Int!]!
+}
+input LocationInput {
+  lat: Float
+  lng: Float
+  address: String
+}
+
+input PriceInput {
+  basePrice: Int!
+}
+input RuleInput {
+  smokingAllowed: Boolean! partiesAndEventsAllowed:Boolean! additionalRules:String
+}
+input AvailableDays {
+  date: String!
+  slots: [Int!]!
+}
+type Token {
+  token: String!
+}
+type AuthPayload {
+  token: String!
+  user: User!
+}
