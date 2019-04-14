@@ -1,4 +1,4 @@
-import 'cross-fetch/polyfill'
+require('cross-fetch/polyfill')
 import getClient from './utils/getClient'
 import {GET_CURRENT_USER, LOGIN, SIGNUP_USER} from './utils/operations'
 const client = getClient()

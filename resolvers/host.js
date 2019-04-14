@@ -10,8 +10,8 @@ const hostResolver = {
       const userId = getUserId(req);
       const offices = await Office.find({host: userId}).populate('reviews')
       const bookee = []
-      for(office of offices){
-        let bookingInfo = await Booking.find({office}).populate([{
+      for(let office of offices){
+        let bookingInfo = await Booking.find({office:office._id}).populate([{
           path: 'bookee',
           model: 'User',
           select: 'firstName lastName avatar'

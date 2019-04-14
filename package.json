@@ -7,7 +7,7 @@
     "server": "env-cmd ./variables.env nodemon index.js --exec babel-node",
     "client": "npm run serve --prefix client",
     "dev": "concurrently --names \"server,client\" \"npm run server \" \"npm run client \"",
-    "test": "env-cmd ./test.env jest --watch --runInBand"
+    "test": "env-cmd ./test.env jest --runInBand"
   },
   "jest": {
     "globalSetup": "./tests/jest/globalSetup.js",
