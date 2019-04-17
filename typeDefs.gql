@@ -248,7 +248,8 @@ type Query {
   me: User!
   getCurrentUser: User
   searchTitle(searchTerm: String): [Office!]
-  searchOffice(searchTerm: String, area: AreaInput, category: String! page:Int): searchOfficesPayload!
+  searchOffice(searchTerm: String, area: AreaInput, category: String!): [Office!]
+  searchOfficeTest(searchTerm: String, area: AreaInput, category: String!): [Office!]
   getOffices: getOfficesPayload
   getOffice(id: String!): Office!
   searchOfficeByFilter(id: [ID!]!, minSize: Int, maxSize: Int, minNumSeats: Int, maxNumSeats: Int, minPrice: Int, maxPice: Int, amenities: [String!]): [Office!]

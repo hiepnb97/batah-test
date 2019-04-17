@@ -434,38 +434,16 @@ export const SEARCH_TITLE = gql`
 `;
 
 export const SEARCH_OFFICE = gql`
-  query($searchTerm: String, $area: AreaInput, $category: String!, $page: Int) {
+  query($searchTerm: String, $area: AreaInput, $category: String!) {
     searchOffice(
       searchTerm: $searchTerm
       area: $area
       category: $category
-      page: $page
     ) {
-      hasMore
-      foundOffices {
-        id
-        title
-        category
-        address
-        shortDescription
-        numSeats
-        pictures
-        tags
-        status
-        availableSchedule
-        pricing {
-          basePrice
-        }
-        location {
-          lat
-          lng
-          address
-        }
-        reviews {
-          stars
-        }
-        size
-      }
+      id
+    title
+    address
+    category
     }
   }
 `;

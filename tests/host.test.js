@@ -1,7 +1,7 @@
 require('cross-fetch/polyfill')
 
 import getClient from './utils/getClient'
-import { GET_OFFICE, GET_OFFICES, LOGIN, GET_REVENUE } from './utils/operations'
+import { GET_OFFICE, GET_OFFICES, LOGIN, GET_REVENUE, GET_OFFICEBYSTATUS } from './utils/operations'
 
 let token = ''
 beforeEach(async () => {
@@ -13,7 +13,7 @@ beforeEach(async () => {
   token = data.login.token
 })
 test('Should return office', async () => {
-  const client = getClient()
+  const client = getClient(token)
 
   const { data } = await client.query({
     query: GET_OFFICE,
@@ -21,6 +21,7 @@ test('Should return office', async () => {
   })
   expect(data.getOffice).not.toBeNull()
 })
+/*
 test('Should return offices', async () => {
   const client = getClient(token)
 
@@ -31,3 +32,4 @@ test('Should return offices', async () => {
   expect(data.getOffices).toHaveProperty('offices')
   expect(data.getOffices).toHaveProperty('booking')
 })
+*/

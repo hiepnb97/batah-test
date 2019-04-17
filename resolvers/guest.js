@@ -46,16 +46,29 @@ const guestResolver = {
       .limit(5)
       return res
     },
-    async searchOffice(_, { searchTerm, area, category, page }, { Office, Location }) {
+    async searchOffice(_, { searchTerm, area, category }, { Office, Location }) {
       console.log("Function: searchOffice")
-      const condition = {status: 'active'}
+      if(!searchTerm && !area){
+        let condition = {}
+        console.log(category)
+        if(category !=='all') condition.category = category
+        return await Office.find(condition).populate([{
+          path: 'pricing'
+        },{
+          path: 'location'
+        },{
+          path: 'officeRules'
+        }, {
+          path: 'reviews'
+        }])
+      }
+      const condition = {}
+
       // searchTitle
-      
+      searchTerm = formatSearch(searchTerm)
       console.log("searchTerm: " + searchTerm)
       if(searchTerm){
-        // searchTerm = formatSearch(searchTerm)
-        // condition = {$text: {$search: searchTerm}}, {score: {$meta:'textScore'}}
-        // condition.searchTitle = { "$regex": searchTerm, "$options": "i" }
+        condition.searchTitle = { "$regex": searchTerm, "$options": "i" }
       }
 
       // area
@@ -69,66 +82,17 @@ const guestResolver = {
       }
 
       // category
-      if(category && category!=='all') condition.category = category 
-      // search
-      let pageSize = 6
-      let pageNum = !!page ? page : 1
-      let foundOffices = []
-      if(searchTerm){
-        foundOffices=await Office.find(
-          {"$text": {"$search": searchTerm}}, {score: {"$meta":'textScore'}})
-          .where(condition)
-        .sort({score: {"$meta": 'textScore'}})
-        .skip(pageSize * (pageNum-1))
-        .limit(pageSize)
-        .select('title category address shortDescription numSeats pictures tags status size')
-        .populate([{
-          path: 'pricing'
-        },{
-          path: 'location'
-        }, {
-          path: 'reviews'
-        }])
-      } else {
-        foundOffices=await Office.find(condition)
-        .skip(pageSize * (pageNum-1))
-        .limit(pageSize)
-        .select('title category address shortDescription numSeats pictures tags status size')
-        .populate([{
-          path: 'pricing'
-        },{
-          path: 'location'
-        }, {
-          path: 'reviews'
-        }])
-      }
-      let totalDocs =  await Office.find(condition).count()
-      console.log('totalDocs',totalDocs)
-      const hasMore = totalDocs > pageSize * pageNum
-      let scheduleByOffice = null; //schedule of a office
-      let result = [];
-      if(foundOffices.length){
-
-          for (office of foundOffices) { //loop over all founded offices
-            // create a copy of office
-            let { id, title,category, address, shortDescription,numSeats, pictures,
-              tags,status,reviews,size, pricing, location} = office
-            let tmp = {id, title, category,address, shortDescription,numSeats, 
-              pictures,tags,reviews,size, status,pricing, location}
-  
-            let daysResult = [] // available days array of current office
-            scheduleByOffice  = await getAvailableSchedule(office._id)
-            for(dayAvailable of scheduleByOffice){
-              daysResult.push(dayAvailable.date) //return array of day available
-            }
-            tmp.availableSchedule = daysResult // assign to tmp office
-            result.push(tmp) // add tmp office to result
-            // console.log(office.daysAvailable)
-          }
-      }
-      console.log('res length: ',result.length)
-      // console.log(foundOffices)
-        return {foundOffices: result, hasMore}
+      console.log('category',category)
+      if(category && category!=='all') condition.category = category  
+      return await Office.find(condition).populate([{
+        path: 'pricing'
+      },{
+        path: 'location'
+      },{
+        path: 'officeRules'
+      }, {
+        path: 'reviews'
+      }])
     },
     async searchOfficeByFilter(_, { id, minSize, maxSize, minNumSeats, maxNumSeats, minPrice, maxPrice, amenities }, { Office, Pricing }) {
       const condition = {}
