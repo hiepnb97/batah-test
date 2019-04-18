@@ -36,7 +36,6 @@ const hostResolver = {
     },
     /* host can not edit booked schedule */
     async getBookedSchedule(_, {office},{ BookedSchedule }){
-      console.log("Function: getBookedSchedule");
       const currentBookedSchedule = await BookedSchedule.find({
         office,
         date: {$gte: new Date()}
@@ -45,7 +44,6 @@ const hostResolver = {
     },
     /* host can view history of guest booking */
     async getBookingByHost(_, {},{ Booking, Office, req }){
-      console.log("Function: getBookingByHost");
 
       // get offices by this host
       const hostId = getUserId(req)
@@ -61,7 +59,6 @@ const hostResolver = {
     },
     /* host can view total price if input office (each office earn) or not input (total price) */
     async getTotalPrice(_, {office},{ Booking, Office, req }){
-      console.log("Function: getTotalPrice");
 
       // get offices by this host
       const hostId = getUserId(req)
@@ -73,24 +70,20 @@ const hostResolver = {
       const currentBooking = await Booking.find({
         office: {$in: ownOffice}
       }).populate('payment', 'totalPrice')
-      console.log(currentBooking)
       
       // sum payments of bookings
       let sum = 0.0;
       for(element of currentBooking){
         sum+=element.payment.totalPrice
       }
-      console.log("Total price: " + sum)
       return {price: sum};
     },
     async getRevenue(_, {},{  User,Revenue, Booking, PayoutPending, req }){
-      console.log('getRevenue')
       const userId = getUserId(req)
       let user = await User.findById(userId).populate({
         path: 'offices',
         model: 'Office'
       })
-      // console.log('user',user)
       if(user.role !== 'host') throw new Error('You have no access to this')
       const revenue = await Revenue.findOne({host: userId}) // {id,host,total, withdrawable}
       let bookings = []
@@ -106,7 +99,6 @@ const hostResolver = {
         }]).select('createdAt')
         bookings.push(...booking)
       }
-      // console.log('booking: ', bookings)
       let payoutHistories = await PayoutPending.find({host: userId}).sort('-createdAt') // {createdAt,host,money,status}
       bookings = bookings.sort((a,b)=> a.createdAt < b.createdAt)
       return {
@@ -126,7 +118,6 @@ const hostResolver = {
         ])
         .select('createdAt stars pictures text')
         .sort('-createdAt')
-        console.log(reviews)
         return reviews
     }
   },
@@ -147,7 +138,6 @@ const hostResolver = {
       };
 
       const savedOffice = await new Office(newOffice).save();
-      // console.log(args.schedule)
       args.schedule.forEach(async el => await AvailableSchedule({...el,office: savedOffice._id}).save())
 
       await User.findOneAndUpdate(
@@ -164,7 +154,6 @@ const hostResolver = {
       if(!user || user.role!=='host') throw new Error('Not authorized')
       const officeToUpdate = await Office.findOne({_id: args.officeId})
       if(!officeToUpdate) throw new Error('Office not found')
-      console.log('updateOffice')
       await Location.deleteOne({_id: officeToUpdate.location})
       await Pricing.deleteOne({_id: officeToUpdate.pricing})
       await OfficeRules.deleteOne({_id: officeToUpdate.officeRules})
@@ -190,7 +179,6 @@ const hostResolver = {
       if(!user || user.role!=='host') throw new Error('Not authorized')
       const officeToUpdate = await Office.findOne({_id: args.officeId})
       if(!officeToUpdate) throw new Error('Office not found')
-      console.log('updateOfficeImages')
 
       const savedOffice = await Office.findOneAndUpdate({_id: args.officeId},{pictures:args.pictures}, {new:true} )
       return savedOffice;
@@ -201,7 +189,6 @@ const hostResolver = {
       if(!user || user.role!=='host') throw new Error('Not authorized')
       const officeToUpdate = await Office.findOne({_id: args.officeId})
       if(!officeToUpdate) throw new Error('Office not found')
-      console.log('updateOfficeSchedule')
       try{
         await AvailableSchedule.deleteMany({office: args.officeId})
         args.schedule.forEach(async el => await new AvailableSchedule({...el,office: args.officeId}).save())
@@ -236,7 +223,6 @@ const hostResolver = {
       return newViews
     },
     async withdrawRevenue(_, { paypal }, { User, Revenue, PayoutPending, req }) {
-      console.log('withdraw')
       const userId = getUserId(req)
       // if admin haven't accept (status = unpaid) the last request => can not withdraw
       const currentPayoutPending = await PayoutPending.find({host: userId, status: "unpaid"})
@@ -246,7 +232,6 @@ const hostResolver = {
       if(paypal) await User.updateOne({_id: userId}, {paypal})
       const revenueWithdraw = await Revenue.findOne({host: userId})
       const money = revenueWithdraw.withdrawable
-      console.log("money", money)
       if(money==0) return null // canot withdraw if money = 0
       // edit Revenue (-withdrawable)
       const currentRevenue = await Revenue.findOneAndUpdate({
@@ -258,7 +243,6 @@ const hostResolver = {
       // create PayoutPending (for admin accept)
       const newPayout = await createPayoutPending({ host: userId, money })
         let res = {revenue: currentRevenue, payout: newPayout}
-        console.log(res)
       return res
     },
     async createPayoutPending(_, { host, money }, { PayoutPending }) {

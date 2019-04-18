@@ -36,7 +36,6 @@ const adminResolver = {
         select: 'firstName lastName id avatar paypal'
       }).sort('-createdAt')
       let paid =await PayoutPending.aggregate([{$match: {status: 'paid'}},{$group: {_id:null,sum:{$sum: "$money"}}}])
-      console.log('paid',paid)
       return {
         revenue,
         total,

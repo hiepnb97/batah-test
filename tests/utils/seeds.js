@@ -3,7 +3,6 @@ const { ObjectId } = mongoose.Types;
 
 const users = [
   {
-    _id: ObjectId('5c973c0bf4b1381a4a117f3a'),
     userType: 'normal',
     role: 'host',
     offices: [
@@ -30,7 +29,6 @@ const users = [
     paypal: 'baopp@gmail.com'
   },
   {
-    _id: ObjectId("5c988f55d63cee34458b09f5"),
     userType: "normal",
     role: "host",
     offices: [
@@ -65,7 +63,6 @@ const users = [
     password: "$2a$10$6Cki.CDwSBbA58aXnqIiw.DW8e7ZTSSX6UvtATnTYdBflK0VG8jMS"
   },
   {
-    _id: ObjectId("5c9890b2d63cee34458b09f6"),
     userType: "google",
     role: "host",
     offices: [
@@ -79,7 +76,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     userType: "normal",
     role: "host",
     offices: [
@@ -117,7 +113,6 @@ const users = [
     ]
   },
   {
-    _id: ObjectId("5c9cdbd72406fc146b9e665d"),
     userType: "google",
     offices: [],
     identity: [],
@@ -130,7 +125,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5c9de5742406fc146b9e666b"),
     userType: "google",
     offices: [],
     identity: [],
@@ -143,7 +137,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     userType: "normal",
     offices: [
       ObjectId("5ca088184433ea13b4adf847")
@@ -169,7 +162,6 @@ const users = [
     address: "tran duy hung"
   },
   {
-    _id: ObjectId("5ca42886785cfa1fb0b49e3a"),
     userType: "normal",
     offices: [],
     identity: [],
@@ -184,7 +176,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca481cedcff777e5e3a3270"),
     userType: "normal",
     offices: [],
     identity: [],
@@ -201,7 +192,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca5c89090485c1d032a12ca"),
     userType: "google",
     offices: [],
     identity: [],
@@ -215,7 +205,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca5caaa90485c1d032a12cc"),
     userType: "google",
     offices: [],
     identity: [],
@@ -229,7 +218,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca858e290485c1d032a12df"),
     userType: "google",
     offices: [],
     identity: [],
@@ -243,7 +231,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5cab6c6b78f39c57175c512b"),
     userType: "normal",
     offices: [],
     identity: [],
@@ -258,7 +245,6 @@ const users = [
     password: "$2a$10$Wkub8XmZEbp7uLQq5N2mfumRKrASYlUa4OXe2DmF1VXNYa.Layt7a"
   },
   {
-    _id: ObjectId("5cadb12219b80424711ffbd4"),
     userType: "normal",
     offices: [],
     identity: [],
@@ -273,7 +259,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadb27e19b80424711ffbd9"),
     userType: "normal",
     offices: [],
     identity: [],
@@ -288,7 +273,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadb2b319b80424711ffbda"),
     userType: "normal",
     offices: [],
     identity: [],
@@ -303,7 +287,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadb2fc19b80424711ffbdb"),
     userType: "normal",
     offices: [],
     identity: [],
@@ -318,7 +301,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadb88819b80424711ffbdc"),
     userType: "google",
     offices: [],
     identity: [],
@@ -332,7 +314,6 @@ const users = [
     __v: 0
   },
   {
-    _id: ObjectId("5cafb83219b80424711ffc3d"),
     userType: "google",
     offices: [],
     identity: [],
@@ -348,7 +329,6 @@ const users = [
 ];
 const offices = [
   {
-    _id: ObjectId('5c98f410c54a9e3df2dc4cd7'),
     tags: ['vip', 'phannguyen'],
     reviews: [
       ObjectId('5ca8cebfdb1a0114f0f273be'),
@@ -386,7 +366,6 @@ const offices = [
     status: 'active'
   },
   {
-    _id: ObjectId('5c98f80fc54a9e3df2dc4ce7'),
     tags: ['vip', 'phannguyen'],
     reviews: [
       ObjectId('5ca1b33ac5ac2e0a34d72b29'),
@@ -441,7 +420,6 @@ const offices = [
     status: 'deactive'
   },
   {
-    _id: ObjectId("5c98f969c54a9e3df2dc4cfa"),
     tags: [
       "vip",
       "phannguyen"
@@ -478,7 +456,6 @@ const offices = [
     status: "deactive"
   },
   {
-    _id: ObjectId("5c98fd22c54a9e3df2dc4d0c"),
     tags: [
       "vip",
       "phannguyen"
@@ -516,7 +493,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c99975bc54a9e3df2dc4d1b"),
     tags: [
       "vip",
       "phannguyen"
@@ -554,7 +530,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c999873c54a9e3df2dc4d26"),
     tags: [
       "vip",
       "phannguyen"
@@ -593,7 +568,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c999a17c54a9e3df2dc4d34"),
     tags: [
       "vip",
       "phannguyen"
@@ -632,7 +606,6 @@ const offices = [
     status: "approve"
   },
   {
-    _id: ObjectId("5c999bcbc54a9e3df2dc4d41"),
     tags: [
       "vip",
       "phannguyen"
@@ -672,7 +645,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c999cc7c54a9e3df2dc4d4f"),
     tags: [
       "vip",
       "phannguyen"
@@ -711,7 +683,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c999fe9c54a9e3df2dc4d62"),
     tags: [
       "vip",
       "phannguyen"
@@ -750,7 +721,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c99a1a8c54a9e3df2dc4d71"),
     tags: [
       "vip",
       "phannguyen"
@@ -788,7 +758,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9a0a6ac54a9e3df2dc4d84"),
     tags: [
       "Marvell",
       "BaDinh",
@@ -830,7 +799,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9a1d74c54a9e3df2dc4d96"),
     tags: [
       "HNTower",
       "HaiBaTrung",
@@ -870,7 +838,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9a3956c54a9e3df2dc4da7"),
     tags: [],
     reviews: [],
     amenities: [
@@ -907,7 +874,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9a3b13c54a9e3df2dc4dba"),
     tags: [
       "Vip"
     ],
@@ -944,7 +910,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9a3cf2c54a9e3df2dc4dc9"),
     tags: [
       "Vip"
     ],
@@ -983,7 +948,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9a3e96c54a9e3df2dc4ddc"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1017,7 +981,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9a41cbc54a9e3df2dc4dec"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1053,7 +1016,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9a4858c54a9e3df2dc4dfd"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1088,7 +1050,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9a495ec54a9e3df2dc4e10"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1126,7 +1087,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9a4b38c54a9e3df2dc4e23"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1160,7 +1120,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9a4d3ac54a9e3df2dc4e36"),
     tags: [
       "Vip"
     ],
@@ -1196,7 +1155,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9a4e60c54a9e3df2dc4e46"),
     tags: [
       "Vip"
     ],
@@ -1233,7 +1191,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b15c7c54a9e3df2dc4e57"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1267,7 +1224,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9b16f6c54a9e3df2dc4e67"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1305,7 +1261,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5c9b1872c54a9e3df2dc4e7a"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1340,7 +1295,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b1a28c54a9e3df2dc4e8c"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1375,7 +1329,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b1c3dc54a9e3df2dc4e9f"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1410,7 +1363,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b3434c54a9e3df2dc4eae"),
     tags: [
       "PhongHoc",
       "VanLinh"
@@ -1446,7 +1398,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b35ccc54a9e3df2dc4ec1"),
     tags: [
       "TranTong"
     ],
@@ -1483,7 +1434,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b39b3c54a9e3df2dc4ed4"),
     tags: [
       "Avatar",
       "Hotel",
@@ -1523,7 +1473,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b3d30c54a9e3df2dc4ee7"),
     tags: [
       "HAIAN",
       "DaNang"
@@ -1559,7 +1508,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b406fc54a9e3df2dc4ef6"),
     tags: [
       "OneOpera",
       "DaNang"
@@ -1596,7 +1544,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b4303c54a9e3df2dc4f03"),
     tags: [
       "Deutsches Haus"
     ],
@@ -1632,7 +1579,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b43ccc54a9e3df2dc4f07"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1666,7 +1612,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5c9b44b4c54a9e3df2dc4f14"),
     tags: [
       "M-Building"
     ],
@@ -1701,7 +1646,6 @@ const offices = [
     status: "pending"
   },
   {
-    _id: ObjectId("5ca088184433ea13b4adf847"),
     tags: [
       "haha"
     ],
@@ -1739,7 +1683,6 @@ const offices = [
     searchTitle: "dep trai 4"
   },
   {
-    _id: ObjectId("5ca6307e90485c1d032a12d0"),
     tags: [],
     reviews: [],
     amenities: [
@@ -1771,7 +1714,6 @@ const offices = [
     status: "active"
   },
   {
-    _id: ObjectId("5ca9cd33135c6317cc85a1dd"),
     tags: [
       "vip",
       "phannguyen"
@@ -1811,7 +1753,6 @@ const offices = [
     __v: 0
   },
   {
-    _id: ObjectId("5caf656b19b80424711ffbec"),
     tags: [
       "Chir Laf Test",
       "af",
@@ -1848,7 +1789,6 @@ const offices = [
     __v: 0
   },
   {
-    _id: ObjectId("5caf667519b80424711ffc0d"),
     tags: [],
     status: "pending",
     reviews: [],
@@ -1882,7 +1822,6 @@ const offices = [
 
 const availableSchedules = [
   {
-    _id: ObjectId("5c97700e37acf615004b5b8f"),
     slots: [
       4,
       2
@@ -1892,7 +1831,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b09fb"),
     slots: [
       8,
       7,
@@ -1905,7 +1843,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b09fc"),
     slots: [
       8,
       9,
@@ -1916,7 +1853,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b09fd"),
     slots: [
       9,
       10
@@ -1926,7 +1862,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b09fe"),
     slots: [
       8,
       11
@@ -1936,7 +1871,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b0a00"),
     slots: [
       1,
       9,
@@ -1948,14 +1882,12 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b0a01"),
     slots: [],
     date: ISODate("2019-04-01T08:26:36.016Z"),
     office: ObjectId("5c98923cd63cee34458b09fa"),
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b09ff"),
     slots: [
       7,
       8,
@@ -1968,7 +1900,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98e8fdc54a9e3df2dc4cd2"),
     slots: [
       3
     ],
@@ -1977,7 +1908,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98e8fdc54a9e3df2dc4cd3"),
     slots: [
       3
     ],
@@ -1986,7 +1916,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98ef569acaf30bc4da7a08"),
     slots: [
       6,
       8
@@ -1996,7 +1925,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98ef569acaf30bc4da7a09"),
     slots: [
       6,
       7
@@ -2006,7 +1934,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98ef569acaf30bc4da7a07"),
     slots: [
       6
     ],
@@ -2015,7 +1942,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98ef569acaf30bc4da7a0b"),
     slots: [
       6,
       7,
@@ -2026,7 +1952,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98ef569acaf30bc4da7a0a"),
     slots: [
       6
     ],
@@ -2035,7 +1960,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f1f29acaf30bc4da7a11"),
     slots: [
       7,
       6
@@ -2045,7 +1969,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f1f29acaf30bc4da7a10"),
     slots: [
       6,
       7
@@ -2055,7 +1978,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f1f29acaf30bc4da7a13"),
     slots: [
       6,
       7,
@@ -2066,7 +1988,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f1f29acaf30bc4da7a12"),
     slots: [
       7
     ],
@@ -2075,7 +1996,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f1f29acaf30bc4da7a14"),
     slots: [
       6
     ],
@@ -2084,7 +2004,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f28e9acaf30bc4da7a19"),
     slots: [
       3
     ],
@@ -2093,7 +2012,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f28e9acaf30bc4da7a1c"),
     slots: [
       11
     ],
@@ -2102,7 +2020,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f28e9acaf30bc4da7a1d"),
     slots: [
       11
     ],
@@ -2111,7 +2028,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f28e9acaf30bc4da7a1a"),
     slots: [
       2,
       7
@@ -2121,7 +2037,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f28e9acaf30bc4da7a1b"),
     slots: [
       9
     ],
@@ -2130,7 +2045,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cd8"),
     slots: [
       7,
       8,
@@ -2143,7 +2057,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cda"),
     slots: [
       7,
       8,
@@ -2156,7 +2069,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cd9"),
     slots: [
       7,
       8,
@@ -2169,7 +2081,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cdd"),
     slots: [
       7,
       8,
@@ -2182,7 +2093,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cde"),
     slots: [
       7,
       8,
@@ -2195,7 +2105,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cdf"),
     slots: [
       7,
       8,
@@ -2208,7 +2117,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cdb"),
     slots: [
       7,
       8,
@@ -2221,7 +2129,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4ce1"),
     slots: [
       5,
       6,
@@ -2232,7 +2139,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4ce1"),
     slots: [
       5,
       6,
@@ -2243,7 +2149,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4ce2"),
     slots: [
       6
     ],
@@ -2252,7 +2157,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4ce3"),
     slots: [
       6
     ],
@@ -2261,7 +2165,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cdc"),
     slots: [
       7,
       8,
@@ -2274,7 +2177,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4ce8"),
     slots: [
       8,
       9,
@@ -2285,7 +2187,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4ce9"),
     slots: [
       1
     ],
@@ -2294,7 +2195,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cea"),
     slots: [
       10,
       1,
@@ -2309,7 +2209,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4ceb"),
     slots: [
       9
     ],
@@ -2318,7 +2217,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cec"),
     slots: [
       11,
       10,
@@ -2331,7 +2229,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cef"),
     slots: [
       2,
       1,
@@ -2343,7 +2240,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4ced"),
     slots: [
       11,
       7,
@@ -2354,7 +2250,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cf0"),
     slots: [
       7
     ],
@@ -2363,7 +2258,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cf1"),
     slots: [
       4
     ],
@@ -2372,7 +2266,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cf5"),
     slots: [
       8,
       1,
@@ -2384,7 +2277,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cf2"),
     slots: [
       6,
       4
@@ -2394,7 +2286,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cf4"),
     slots: [
       6,
       10,
@@ -2405,7 +2296,6 @@ const availableSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4cee"),
     slots: [
       5,
       4
@@ -2418,7 +2308,6 @@ const availableSchedules = [
 
 const bookedSchedules = [
   {
-    _id: ObjectId("5ca0402aee25e11d9c1074d9"),
     slots: [
       4
     ],
@@ -2427,7 +2316,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca04318eefb241e10ffcd64"),
     slots: [
       4,
       5
@@ -2437,7 +2325,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca04350eefb241e10ffcd67"),
     slots: [
       6,
       7
@@ -2447,7 +2334,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca32d500a97d0192859de1c"),
     slots: [
       5
     ],
@@ -2456,7 +2342,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca4826adcff777e5e3a3273"),
     slots: [
       11,
       3
@@ -2466,7 +2351,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca48eca90485c1d032a12c4"),
     slots: [
       9
     ],
@@ -2475,7 +2359,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca48f4e90485c1d032a12c7"),
     slots: [
       7
     ],
@@ -2484,7 +2367,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca63f443e71e204ec2b1eeb"),
     slots: [
       7,
       8
@@ -2494,7 +2376,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca641db1d514514b0c7b964"),
     slots: [
       9
     ],
@@ -2503,7 +2384,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca643cb7f45ca1dc0724491"),
     slots: [
       10
     ],
@@ -2512,7 +2392,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca644553fb5641f54669c45"),
     slots: [
       2
     ],
@@ -2521,7 +2400,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca644dd4d0b3d0d2cf50f3c"),
     slots: [
       3
     ],
@@ -2530,7 +2408,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca64579c592cd1d50289c90"),
     slots: [
       3
     ],
@@ -2539,7 +2416,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca8c7dc78f39c57175c5123"),
     slots: [
       2,
       9
@@ -2549,7 +2425,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9c31777a2581e2c8794a8"),
     slots: [
       10,
       11,
@@ -2561,7 +2436,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9cee6135c6317cc85a1f1"),
     slots: [
       1,
       4,
@@ -2572,7 +2446,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5caa269d78f39c57175c5127"),
     slots: [
       8
     ],
@@ -2581,7 +2454,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5cab5a7d926efe1ac0fcec4f"),
     slots: [
       11,
       12
@@ -2591,7 +2463,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5cac0fe40ff43a171c6b8c07"),
     slots: [
       13,
       14
@@ -2601,7 +2472,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadf67a19b80424711ffbe0"),
     slots: [
       1
     ],
@@ -2610,7 +2480,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb02bfacdd1f208f88942b6"),
     slots: [
       12
     ],
@@ -2619,7 +2488,6 @@ const bookedSchedules = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb1d4b0fe3ffa0bd08fb25a"),
     slots: [
       16,
       17,
@@ -2633,7 +2501,6 @@ const bookedSchedules = [
 ];
 const bookings = [
   {
-    _id: ObjectId("5ca4826adcff777e5e3a3274"),
     bookee: ObjectId("5ca481cedcff777e5e3a3270"),
     office: ObjectId("5c999cc7c54a9e3df2dc4d4f"),
     bookedSchedules: ObjectId("5ca4826adcff777e5e3a3273"),
@@ -2646,7 +2513,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca48eca90485c1d032a12c5"),
     bookee: ObjectId("5c988f55d63cee34458b09f5"),
     office: ObjectId("5c98fd22c54a9e3df2dc4d0c"),
     bookedSchedules: ObjectId("5ca48eca90485c1d032a12c4"),
@@ -2659,7 +2525,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca48f4e90485c1d032a12c8"),
     bookee: ObjectId("5c973c0bf4b1381a4a117f3a"),
     office: ObjectId("5c9a0a6ac54a9e3df2dc4d84"),
     bookedSchedules: ObjectId("5ca48f4e90485c1d032a12c7"),
@@ -2672,7 +2537,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca63f443e71e204ec2b1eec"),
     bookee: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     office: ObjectId("5c98f410c54a9e3df2dc4cd7"),
     bookedSchedules: ObjectId("5ca63f443e71e204ec2b1eeb"),
@@ -2685,7 +2549,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca641db1d514514b0c7b965"),
     bookee: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     office: ObjectId("5c98f410c54a9e3df2dc4cd7"),
     bookedSchedules: ObjectId("5ca641db1d514514b0c7b964"),
@@ -2698,7 +2561,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca643cb7f45ca1dc0724492"),
     bookee: ObjectId("5c906c8bc548932224ef4e12"),
     office: ObjectId("5c98f969c54a9e3df2dc4cfa"),
     bookedSchedules: ObjectId("5ca643cb7f45ca1dc0724491"),
@@ -2711,7 +2573,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca644563fb5641f54669c46"),
     bookee: ObjectId("5c906c8bc548932224ef4e12"),
     office: ObjectId("5c99a1a8c54a9e3df2dc4d71"),
     bookedSchedules: ObjectId("5ca644553fb5641f54669c45"),
@@ -2724,7 +2585,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca644dd4d0b3d0d2cf50f3d"),
     bookee: ObjectId("5c906c8bc548932224ef4e12"),
     office: ObjectId("5c99a1a8c54a9e3df2dc4d71"),
     bookedSchedules: ObjectId("5ca644dd4d0b3d0d2cf50f3c"),
@@ -2737,7 +2597,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca64579c592cd1d50289c91"),
     bookee: ObjectId("5c906c8bc548932224ef4e12"),
     office: ObjectId("5c99a1a8c54a9e3df2dc4d71"),
     bookedSchedules: ObjectId("5ca64579c592cd1d50289c90"),
@@ -2750,7 +2609,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca8c7dc78f39c57175c5124"),
     bookee: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     office: ObjectId("5c99a1a8c54a9e3df2dc4d71"),
     bookedSchedules: ObjectId("5ca8c7dc78f39c57175c5123"),
@@ -2763,7 +2621,6 @@ const bookings = [
     phone: "0963392888"
   },
   {
-    _id: ObjectId("5ca9c31777a2581e2c8794a9"),
     firstName: "Anh",
     lastName: "Nguyen Minh",
     phone: "+84 96 339 28 88",
@@ -2776,7 +2633,6 @@ const bookings = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9cee6135c6317cc85a1f2"),
     firstName: "Bảo",
     lastName: "Phan",
     phone: "+84 349 689 410",
@@ -2789,7 +2645,6 @@ const bookings = [
     __v: 0
   },
   {
-    _id: ObjectId("5caa269d78f39c57175c5128"),
     bookee: ObjectId("5c988f55d63cee34458b09f5"),
     office: ObjectId("5ca6307e90485c1d032a12d0"),
     bookedSchedules: ObjectId("5caa269d78f39c57175c5127"),
@@ -2798,7 +2653,6 @@ const bookings = [
     __v: 0
   },
   {
-    _id: ObjectId("5cab5a7d926efe1ac0fcec50"),
     firstName: "Bảo",
     lastName: "Phan",
     phone: "+84 349 689 410",
@@ -2811,7 +2665,6 @@ const bookings = [
     __v: 0
   },
   {
-    _id: ObjectId("5cac0fe40ff43a171c6b8c08"),
     firstName: "Bảo",
     lastName: "Phan",
     phone: "+84 349 689 410",
@@ -2824,7 +2677,6 @@ const bookings = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadf67a19b80424711ffbe1"),
     identity: [
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9a30c8c54a9e3df2dc4da3/id/IMG_9872.JPG",
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9a30c8c54a9e3df2dc4da3/id/IMG_9930.JPG"
@@ -2841,7 +2693,6 @@ const bookings = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb02bfacdd1f208f88942b7"),
     identity: [
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9edd213a7e4905ac5f6fe6/id/cat.jpg",
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9edd213a7e4905ac5f6fe6/id/autumn.jpg"
@@ -2858,7 +2709,6 @@ const bookings = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb1d4b0fe3ffa0bd08fb25b"),
     identity: [
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c973c0bf4b1381a4a117f3a/id/52782460_2247878905434125_8981426680711086080_n.jpg",
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c973c0bf4b1381a4a117f3a/id/52819970_815773655425393_8853715329948319744_n.jpg"
@@ -2879,7 +2729,6 @@ const bookings = [
 
 const conversations = [
   {
-    _id: ObjectId("5ca4832bdcff777e5e3a3276"),
     participants: [
       ObjectId("5ca481cedcff777e5e3a3270"),
       ObjectId("5c973c0bf4b1381a4a117f3a")
@@ -2897,7 +2746,6 @@ const conversations = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca487bf17d9911ae1c88bf2"),
     participants: [
       ObjectId("5ca481cedcff777e5e3a3270"),
       ObjectId("5ca4832bdcff777e5e3a3275")
@@ -2911,7 +2759,6 @@ const conversations = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca72de8b9da8b1f60beea3f"),
     read: true,
     participants: [
       ObjectId("5c9edd213a7e4905ac5f6fe6"),
@@ -2927,7 +2774,6 @@ const conversations = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca72ffdf95b53131024e340"),
     read: true,
     participants: [
       ObjectId("5c906c8bc548932224ef4e12"),
@@ -2945,7 +2791,6 @@ const conversations = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88dbb78f39c57175c511e"),
     read: true,
     participants: [
       ObjectId("5c973c0bf4b1381a4a117f3a"),
@@ -2964,7 +2809,6 @@ const conversations = [
     __v: 0
   },
   {
-    _id: ObjectId("5cac67023fe2401d34651304"),
     read: false,
     participants: [
       ObjectId("5c9edd213a7e4905ac5f6fe6"),
@@ -2979,7 +2823,6 @@ const conversations = [
     __v: 0
   },
   {
-    _id: ObjectId("5cacc6bb19b80424711ffbd0"),
     read: true,
     participants: [
       ObjectId("5c9a30c8c54a9e3df2dc4da3"),
@@ -2995,7 +2838,6 @@ const conversations = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadf6da19b80424711ffbe4"),
     read: false,
     participants: [
       ObjectId("5c9a30c8c54a9e3df2dc4da3"),
@@ -3013,7 +2855,6 @@ const conversations = [
 
 const creditCardInformations = [
   {
-    _id: ObjectId("5c935844f3db480b60662302"),
     cardNumber: "123",
     expiresOnMonth: 5,
     expiresOnYear: 2020,
@@ -3028,350 +2869,300 @@ const creditCardInformations = [
 
 const locations = [
   {
-    _id: ObjectId("5c9072f72e5e350580be85a5"),
     lat: 15.9785431,
     lng: 108.2620534,
     address: "98 thanh xuan, Hanoi",
     __v: 0
   },
   {
-    _id: ObjectId("5c90af9073c36f0e0ca0f1ee"),
     lat: 21.0133687,
     lng: 105.5272942,
     address: "69 thanh xuan, Hanoi",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b651ba54c40e50e4a879"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b68ec72894068895bdc3"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b70a123abf22f4662005"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b8db586ad30548231b3f"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b915fc76560f480b4263"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c93bb42fc76560f480b426e"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c93bb7efc76560f480b4279"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c93bfbb4020061cd4ff20d6"),
     lat: 21.0170303,
     lng: 105.7839017,
     address: "Keangnam, Mễ Trì, Từ Liêm, Hanoi, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9451301b99540b24252a1d"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9452098259b200a861d2e7"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9741ffca22b41b5bf25599"),
     lat: 21.0222742,
     lng: 105.8163242,
     address: "22 Thành Công, Ba Đình, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c97700e37acf615004b5b8b"),
     lat: 28.4089123,
     lng: 77.3177894,
     address: "Faridabad, Haryana, India",
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b09f7"),
     lat: 10.8507688,
     lng: 106.7985617,
     address: "Đường D1, Khu Công Nghệ Cao, Phường Tân Phú, Quận 9, Hồ Chí Minh 715650, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c98e8fdc54a9e3df2dc4cce"),
     lat: 41.670293,
     lng: -87.620825,
     address: "12312 S Michigan Ave, Chicago, IL 60628, USA",
     __v: 0
   },
   {
-    _id: ObjectId("5c98ef569acaf30bc4da7a03"),
     lat: 21.0091819,
     lng: 105.5309972,
     address: "Tòa nhà Viettel - Khu Công nghệ cao Hòa Lạc, Thạch Thất, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f1f29acaf30bc4da7a0c"),
     lat: 21.0133687,
     lng: 105.5272942,
     address: "KM29 Đại Lộ Thăng Long, Thạch Hoà, Thạch Thất, Khu GD&ĐT, Khu CNC Hòa Lạc Hà Nội 155300, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f28d9acaf30bc4da7a15"),
     lat: 21.027964,
     lng: 105.8510132,
     address: "Hoàn Kiếm, Hanoi, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cd4"),
     lat: 10.802338,
     lng: 106.720701,
     address: "15 Đường Nguyễn Văn Thương, Phường 25, Bình Thạnh, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4ce4"),
     lat: 10.7984364,
     lng: 106.7517804,
     address: "67 Đường Mai Chí Thọ, An Phú, Quận 2, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f969c54a9e3df2dc4cf7"),
     lat: 10.800829,
     lng: 106.656605,
     address: "37 Cộng Hòa, Phường 4, Tân Bình, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c98fd22c54a9e3df2dc4d09"),
     lat: 10.792005,
     lng: 106.6879873,
     address: "22 Nguyễn Văn Nguyễn, Tân Định, Quận 1, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c99975bc54a9e3df2dc4d18"),
     lat: 10.7793721,
     lng: 106.6898306,
     address: "39 Trần Quốc Thảo, Phường 6, Quận 3, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c999873c54a9e3df2dc4d23"),
     lat: 10.769514,
     lng: 106.6821349,
     address: "33 Cao Thắng, Phường 2, Quận 3, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c999a17c54a9e3df2dc4d31"),
     lat: 10.769514,
     lng: 106.6821349,
     address: "33 Cao Thắng, Phường 2, Quận 3, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c999bcbc54a9e3df2dc4d3e"),
     lat: 10.7840377,
     lng: 106.6840031,
     address: "180 Lý Chính Thắng, Phường 9, Quận 3, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c999cc7c54a9e3df2dc4d4c"),
     lat: 10.768371,
     lng: 106.698283,
     address: "55/29 Lê Thị Hồng Gấm, Phường Nguyễn Thái Bìn, Quận 1, Hồ Chí Minh, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c999fe9c54a9e3df2dc4d5f"),
     lat: 21.0315367,
     lng: 105.7831518,
     address: "78 Phố Duy Tân, Dịch Vọng Hậu, Cầu Giấy, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c99a1a8c54a9e3df2dc4d6e"),
     lat: 20.9629564,
     lng: 105.7643,
     address: "20 Lê Trọng Tấn, Hà Cầu, Hà Đông, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a1d74c54a9e3df2dc4d93"),
     lat: 21.0262507,
     lng: 105.8460146,
     address: "58 Hai Bà Trưng, Trần Hưng Đạo, Hoàn Kiếm, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3956c54a9e3df2dc4da4"),
     lat: 20.9797258,
     lng: 105.7874647,
     address: "Trần Phú, Văn Quán, Hà Đông, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3b13c54a9e3df2dc4db7"),
     lat: 21.0229461,
     lng: 105.8098437,
     address: "Nguyễn Chí Thanh, Ba Đình, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3cf2c54a9e3df2dc4dc6"),
     lat: 21.0155316,
     lng: 105.8164951,
     address: "Thái Hà, Láng Hạ, Đống Đa, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3e96c54a9e3df2dc4dd9"),
     lat: 21.0115475,
     lng: 105.8626896,
     address: "Lương Yên, Bạch Đằng, Hai Bà Trưng, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a41cbc54a9e3df2dc4de9"),
     lat: 20.9797258,
     lng: 105.7874647,
     address: "Trần Phú, Văn Quán, Hà Đông, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4858c54a9e3df2dc4dfa"),
     lat: 20.9959104,
     lng: 105.8576533,
     address: "Minh Khai, Hai Bà Trưng, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a495ec54a9e3df2dc4e0d"),
     lat: 21.0306198,
     lng: 105.7748661,
     address: "Nguyễn Hoàng, Mỹ Đình 2, Từ Liêm, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4b38c54a9e3df2dc4e20"),
     lat: 21.023216,
     lng: 105.7948113,
     address: "Yên Hòa, Yên Hoà, Cầu Giấy, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4d3ac54a9e3df2dc4e33"),
     lat: 21.0115475,
     lng: 105.8626896,
     address: "Lương Yên, Bạch Đằng, Hai Bà Trưng, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4e60c54a9e3df2dc4e43"),
     lat: 21.0060791,
     lng: 105.8040298,
     address: "Hoàng Đạo Thúy, Thanh Xuân, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b15c7c54a9e3df2dc4e54"),
     lat: 20.9651796,
     lng: 105.8415939,
     address: "Thanh Xuân, Hoàng Liệt, Hoàng Mai, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b16f6c54a9e3df2dc4e64"),
     lat: 20.9797258,
     lng: 105.7874647,
     address: "Trần Phú, Văn Quán, Hà Đông, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1872c54a9e3df2dc4e77"),
     lat: 21.0259011,
     lng: 105.8538708,
     address: "Đinh Lễ, French Quarter, Tràng Tiền, Hoàn Kiếm, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1a28c54a9e3df2dc4e89"),
     lat: 21.0203854,
     lng: 105.826789,
     address: "Ô Chợ Dừa, Đống Đa, Hanoi, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1c3dc54a9e3df2dc4e9c"),
     lat: 21.0261271,
     lng: 105.8555514,
     address: "Phố Ngô Quyền, Hoàn Kiếm, Hà Nội, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b3434c54a9e3df2dc4eab"),
     lat: 16.0594744,
     lng: 108.2117482,
     address: "155 Nguyễn Văn Linh, Vĩnh Trung, Thanh Khê, Đà Nẵng 550000, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b35ccc54a9e3df2dc4ebe"),
     lat: 16.0588187,
     lng: 108.2116724,
     address: "22 Trần Tống, Vĩnh Trung, Thanh Khê, Đà Nẵng 550000, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b39b3c54a9e3df2dc4ed1"),
     lat: 16.0491458,
     lng: 108.2454209,
     address: "104 Hoàng Kế Viêm, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng 550000, Vietnam",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b3d30c54a9e3df2dc4ee4"),
     lat: 16.0531226,
     lng: 108.2476443,
     address: "278 Võ Nguyên Giáp, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng 550000, Vietnam",
@@ -3382,7 +3173,6 @@ const locations = [
 
 const messages = [
   {
-    _id: ObjectId("5ca422b7785cfa1fb0b49e38"),
     from: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     to: ObjectId("5c906c8bc548932224ef4e12"),
     content: "halo",
@@ -3391,7 +3181,6 @@ const messages = [
     readAt: ISODate("2019-04-03T03:09:46.874Z")
   },
   {
-    _id: ObjectId("5ca423c5785cfa1fb0b49e39"),
     from: ObjectId("5c906c8bc548932224ef4e12"),
     to: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     content: "hellu",
@@ -3400,7 +3189,6 @@ const messages = [
     readAt: ISODate("2019-04-03T03:10:36.394Z")
   },
   {
-    _id: ObjectId("5ca4260ddcff777e5e3a326e"),
     from: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     to: ObjectId("5ca422b7785cfa1fb0b49e38"),
     content: "haha",
@@ -3408,7 +3196,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca4832bdcff777e5e3a3275"),
     from: ObjectId("5ca481cedcff777e5e3a3270"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "alo, cho t hoi?",
@@ -3417,7 +3204,6 @@ const messages = [
     readAt: ISODate("2019-04-03T10:14:06.159Z")
   },
   {
-    _id: ObjectId("5ca4877717d9911ae1c88bf0"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5ca481cedcff777e5e3a3270"),
     content: "helllo",
@@ -3426,7 +3212,6 @@ const messages = [
     readAt: ISODate("2019-04-03T10:16:35.939Z")
   },
   {
-    _id: ObjectId("5ca487bf17d9911ae1c88bf1"),
     from: ObjectId("5ca481cedcff777e5e3a3270"),
     to: ObjectId("5ca4832bdcff777e5e3a3275"),
     content: "khong co gi",
@@ -3434,7 +3219,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca487d817d9911ae1c88bf3"),
     from: ObjectId("5ca481cedcff777e5e3a3270"),
     to: ObjectId("5ca4832bdcff777e5e3a3275"),
     content: "alkjsdf",
@@ -3442,7 +3226,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca487eb17d9911ae1c88bf4"),
     from: ObjectId("5ca481cedcff777e5e3a3270"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "khong c o cai gi o day",
@@ -3450,7 +3233,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca487f817d9911ae1c88bf5"),
     from: ObjectId("5ca481cedcff777e5e3a3270"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "adfasdfasdf",
@@ -3459,7 +3241,6 @@ const messages = [
     readAt: ISODate("2019-04-05T08:23:49.168Z")
   },
   {
-    _id: ObjectId("5ca72de8b9da8b1f60beea3e"),
     from: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "bdsm",
@@ -3467,7 +3248,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca72fa5f95b53131024e33e"),
     from: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "bdsm tap2",
@@ -3475,7 +3255,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca72ffdf95b53131024e33f"),
     from: ObjectId("5c906c8bc548932224ef4e12"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "em yeu truong edm",
@@ -3483,7 +3262,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca733e0605dee12600afe1a"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5c906c8bc548932224ef4e12"),
     content: "yeu ur mom",
@@ -3491,7 +3269,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca734cbdd6c250518e9b68f"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5c906c8bc548932224ef4e12"),
     content: "hello",
@@ -3499,7 +3276,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca73634dd6c250518e9b690"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5c906c8bc548932224ef4e12"),
     content: "heloo2131",
@@ -3507,7 +3283,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca73731dd6c250518e9b691"),
     from: ObjectId("5c906c8bc548932224ef4e12"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "hi",
@@ -3515,7 +3290,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88c9fcffdda56ea16dcb0"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5ca481cedcff777e5e3a3270"),
     content: "Hellloooo Kiên",
@@ -3523,7 +3297,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88d9c78f39c57175c511c"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5ca481cedcff777e5e3a3270"),
     content: "chào bạn",
@@ -3531,7 +3304,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88dbb78f39c57175c511d"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5c988f55d63cee34458b09f5"),
     content: "chào bạnnn",
@@ -3539,7 +3311,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88dca78f39c57175c511f"),
     from: ObjectId("5c988f55d63cee34458b09f5"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "hello\n",
@@ -3547,7 +3318,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88dd978f39c57175c5120"),
     from: ObjectId("5c988f55d63cee34458b09f5"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "alo",
@@ -3555,7 +3325,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88de778f39c57175c5121"),
     from: ObjectId("5c988f55d63cee34458b09f5"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "khong bao gio dung co mong cho\n",
@@ -3563,7 +3332,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5caa255f78f39c57175c5125"),
     from: ObjectId("5c988f55d63cee34458b09f5"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "ert\n",
@@ -3571,7 +3339,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5caa270a78f39c57175c5129"),
     from: ObjectId("5c988f55d63cee34458b09f5"),
     to: ObjectId("5c988f55d63cee34458b09f5"),
     content: "heelooolakdjf",
@@ -3579,7 +3346,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5caa272f78f39c57175c512a"),
     from: ObjectId("5c988f55d63cee34458b09f5"),
     to: ObjectId("5c988f55d63cee34458b09f5"),
     content: "asdfasdfa hello",
@@ -3587,7 +3353,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cac3de9b51e4218ed0f1762"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     content: "hello Minh Anh",
@@ -3595,7 +3360,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cac67023fe2401d34651303"),
     from: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     to: ObjectId("5ca42886785cfa1fb0b49e3a"),
     content: "chao anh admin",
@@ -3603,7 +3367,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cac67a53fe2401d34651305"),
     from: ObjectId("5ca42886785cfa1fb0b49e3a"),
     to: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     content: "chao ban",
@@ -3611,7 +3374,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cacc6bb19b80424711ffbcf"),
     from: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     to: ObjectId("5ca42886785cfa1fb0b49e3a"),
     content: "đấ",
@@ -3619,7 +3381,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cacc78519b80424711ffbd1"),
     from: ObjectId("5ca42886785cfa1fb0b49e3a"),
     to: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     content: "anh rep nè",
@@ -3627,7 +3388,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cacc79c19b80424711ffbd2"),
     from: ObjectId("5ca42886785cfa1fb0b49e3a"),
     to: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     content: "test Feedback ok ",
@@ -3635,7 +3395,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cacc7a519b80424711ffbd3"),
     from: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     to: ObjectId("5ca42886785cfa1fb0b49e3a"),
     content: "ok anh \n",
@@ -3643,7 +3402,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadf6da19b80424711ffbe3"),
     from: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "ok",
@@ -3651,7 +3409,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cae03e012d7df1c80a5c3d2"),
     from: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     to: ObjectId("5c973c0bf4b1381a4a117f3a"),
     content: "bao dep trai",
@@ -3659,7 +3416,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cae1e55be22741eec33c0a7"),
     from: ObjectId("5ca42886785cfa1fb0b49e3a"),
     to: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     content: "Phòng đẹp đấy",
@@ -3667,7 +3423,6 @@ const messages = [
     __v: 0
   },
   {
-    _id: ObjectId("5cae29c319b80424711ffbe8"),
     from: ObjectId("5c973c0bf4b1381a4a117f3a"),
     to: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     content: "Cảm ơn bạn",
@@ -3679,7 +3434,6 @@ const messages = [
 
 const notifications = [
   {
-    _id: ObjectId("5ca8b9656619e616dc46a9e8"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "accept",
     office: ObjectId("5c98f80fc54a9e3df2dc4ce7"),
@@ -3688,7 +3442,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca8b9676619e616dc46a9e9"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "accept",
     office: ObjectId("5c98f969c54a9e3df2dc4cfa"),
@@ -3697,7 +3450,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca8ce7bdb1a0114f0f273bd"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "accept",
     office: ObjectId("5c98f410c54a9e3df2dc4cd7"),
@@ -3706,7 +3458,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca8cf3d963d300464d91628"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "review",
     office: ObjectId("5c98f410c54a9e3df2dc4cd7"),
@@ -3715,7 +3466,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f5658d5141fd8f3797b"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "accept",
     office: ObjectId("5c999cc7c54a9e3df2dc4d4f"),
@@ -3724,7 +3474,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f5758d5141fd8f3797c"),
     user: ObjectId("5c988f55d63cee34458b09f5"),
     type: "accept",
     office: ObjectId("5c9a1d74c54a9e3df2dc4d96"),
@@ -3733,7 +3482,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f5858d5141fd8f3797d"),
     user: ObjectId("5c988f55d63cee34458b09f5"),
     type: "accept",
     office: ObjectId("5c9a0a6ac54a9e3df2dc4d84"),
@@ -3742,7 +3490,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f5958d5141fd8f3797e"),
     user: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     type: "accept",
     office: ObjectId("5c9a3956c54a9e3df2dc4da7"),
@@ -3751,7 +3498,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f5a58d5141fd8f3797f"),
     user: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     type: "accept",
     office: ObjectId("5c9a3b13c54a9e3df2dc4dba"),
@@ -3760,7 +3506,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f5b58d5141fd8f37980"),
     user: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     type: "accept",
     office: ObjectId("5c9a3cf2c54a9e3df2dc4dc9"),
@@ -3769,7 +3514,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f5b58d5141fd8f37981"),
     user: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     type: "accept",
     office: ObjectId("5c9a3e96c54a9e3df2dc4ddc"),
@@ -3778,7 +3522,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f5f58d5141fd8f37982"),
     user: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     type: "accept",
     office: ObjectId("5c9b16f6c54a9e3df2dc4e67"),
@@ -3787,7 +3530,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca99f6058d5141fd8f37983"),
     user: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     type: "accept",
     office: ObjectId("5c9b15c7c54a9e3df2dc4e57"),
@@ -3796,7 +3538,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9c31777a2581e2c8794aa"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "booking",
     office: ObjectId("5c98f410c54a9e3df2dc4cd7"),
@@ -3805,7 +3546,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9ce34135c6317cc85a1ee"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "accept",
     office: ObjectId("5ca9cd33135c6317cc85a1dd"),
@@ -3814,7 +3554,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9ce35135c6317cc85a1ef"),
     user: ObjectId("5c988f55d63cee34458b09f5"),
     type: "accept",
     office: ObjectId("5ca6307e90485c1d032a12d0"),
@@ -3823,7 +3562,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9cee6135c6317cc85a1f3"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "booking",
     office: ObjectId("5ca9cd33135c6317cc85a1dd"),
@@ -3832,7 +3570,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5cab5a7d926efe1ac0fcec51"),
     user: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     type: "booking",
     office: ObjectId("5ca088184433ea13b4adf847"),
@@ -3841,7 +3578,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5cac0fe40ff43a171c6b8c09"),
     user: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     type: "booking",
     office: ObjectId("5ca088184433ea13b4adf847"),
@@ -3850,7 +3586,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadbd2019b80424711ffbdd"),
     user: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     type: "accept",
     office: ObjectId("5c9a41cbc54a9e3df2dc4dec"),
@@ -3859,7 +3594,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadf67a19b80424711ffbe2"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "booking",
     office: ObjectId("5c999cc7c54a9e3df2dc4d4f"),
@@ -3868,7 +3602,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5cae0e544519170afcb8bb67"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "review",
     office: ObjectId("5c98f410c54a9e3df2dc4cd7"),
@@ -3877,7 +3610,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5caed4e9ff71d916c8f6243d"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "review",
     office: ObjectId("5c98f410c54a9e3df2dc4cd7"),
@@ -3886,7 +3618,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5caed50bff71d916c8f6243f"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "review",
     office: ObjectId("5c98f410c54a9e3df2dc4cd7"),
@@ -3895,7 +3626,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5caf868419b80424711ffc3c"),
     user: ObjectId("5c973c0bf4b1381a4a117f3a"),
     type: "review",
     office: ObjectId("5c999cc7c54a9e3df2dc4d4f"),
@@ -3904,7 +3634,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb02bfacdd1f208f88942b8"),
     user: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     type: "booking",
     office: ObjectId("5ca088184433ea13b4adf847"),
@@ -3913,7 +3642,6 @@ const notifications = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb1d4b0fe3ffa0bd08fb25c"),
     user: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     type: "booking",
     office: ObjectId("5ca088184433ea13b4adf847"),
@@ -3926,350 +3654,300 @@ const notifications = [
 
 const officeRules = [
   {
-    _id: ObjectId("5c9072f82e5e350580be85a7"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "fsdf",
     __v: 0
   },
   {
-    _id: ObjectId("5c90af9073c36f0e0ca0f1f0"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b651ba54c40e50e4a87b"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b68ec72894068895bdc5"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b70a123abf22f4662007"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b8db586ad30548231b41"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c93b915fc76560f480b4265"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c93bb42fc76560f480b4270"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c93bb7ffc76560f480b427b"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c93bfbb4020061cd4ff20d8"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9451301b99540b24252a1f"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c9452098259b200a861d2e9"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c9741ffca22b41b5bf2559b"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c97700e37acf615004b5b8d"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b09f9"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c98e8fdc54a9e3df2dc4cd0"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c98ef569acaf30bc4da7a05"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "No pets",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f1f29acaf30bc4da7a0e"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f28e9acaf30bc4da7a17"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cd6"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4ce6"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c98f969c54a9e3df2dc4cf9"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c98fd22c54a9e3df2dc4d0b"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c99975bc54a9e3df2dc4d1a"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c999873c54a9e3df2dc4d25"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c999a17c54a9e3df2dc4d33"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c999bcbc54a9e3df2dc4d40"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c999cc7c54a9e3df2dc4d4e"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c999fe9c54a9e3df2dc4d61"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c99a1a8c54a9e3df2dc4d70"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a1d74c54a9e3df2dc4d95"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "Tuyệt đối không được hút thuốc cả trong nhà vệ sinh",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3956c54a9e3df2dc4da6"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "No pet ",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3b13c54a9e3df2dc4db9"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "No Pet",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3cf2c54a9e3df2dc4dc8"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3e96c54a9e3df2dc4ddb"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a41cbc54a9e3df2dc4deb"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4858c54a9e3df2dc4dfc"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a495ec54a9e3df2dc4e0f"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4b38c54a9e3df2dc4e22"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4d3ac54a9e3df2dc4e35"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4e60c54a9e3df2dc4e45"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b15c7c54a9e3df2dc4e56"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b16f6c54a9e3df2dc4e66"),
     smokingAllowed: true,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1872c54a9e3df2dc4e79"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1a28c54a9e3df2dc4e8b"),
     smokingAllowed: false,
     partiesAndEventsAllowed: true,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1c3dc54a9e3df2dc4e9e"),
     smokingAllowed: true,
     partiesAndEventsAllowed: true,
     additionalRules: "Pet allowed",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b3434c54a9e3df2dc4ead"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b35ccc54a9e3df2dc4ec0"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b39b3c54a9e3df2dc4ed3"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
     __v: 0
   },
   {
-    _id: ObjectId("5c9b3d30c54a9e3df2dc4ee6"),
     smokingAllowed: false,
     partiesAndEventsAllowed: false,
     additionalRules: "",
@@ -4280,7 +3958,6 @@ const officeRules = [
 
 const paymentAccounts = [
   {
-    _id: ObjectId("5c9358fef3db480b60662304"),
     type: "PAYPAL",
     paypal: ObjectId("5c935886f3db480b60662303"),
     creditcard: ObjectId("5c935844f3db480b60662302"),
@@ -4291,7 +3968,6 @@ const paymentAccounts = [
 
 const payments = [
   {
-    _id: ObjectId("5ca4826adcff777e5e3a3272"),
     serviceFee: 100000,
     officePrice: 500000,
     totalPrice: 1000000,
@@ -4300,7 +3976,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca48eca90485c1d032a12c3"),
     serviceFee: 32000,
     officePrice: 320000,
     totalPrice: 320000,
@@ -4309,7 +3984,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca48f4e90485c1d032a12c6"),
     serviceFee: 20000,
     officePrice: 200000,
     totalPrice: 200000,
@@ -4318,7 +3992,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca63f443e71e204ec2b1eea"),
     serviceFee: 16000,
     officePrice: 80000,
     totalPrice: 160000,
@@ -4327,7 +4000,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca641db1d514514b0c7b963"),
     serviceFee: 8000,
     officePrice: 80000,
     totalPrice: 80000,
@@ -4336,7 +4008,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca643cb7f45ca1dc0724490"),
     serviceFee: 41000,
     officePrice: 410000,
     totalPrice: 410000,
@@ -4345,7 +4016,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca644553fb5641f54669c44"),
     serviceFee: 25000,
     officePrice: 250000,
     totalPrice: 250000,
@@ -4354,7 +4024,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca644dd4d0b3d0d2cf50f3b"),
     serviceFee: 25000,
     officePrice: 250000,
     totalPrice: 250000,
@@ -4363,7 +4032,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca64579c592cd1d50289c8f"),
     serviceFee: 25000,
     officePrice: 250000,
     totalPrice: 250000,
@@ -4372,7 +4040,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca8c7dc78f39c57175c5122"),
     serviceFee: 50000,
     officePrice: 250000,
     totalPrice: 500000,
@@ -4381,7 +4048,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9c31777a2581e2c8794a7"),
     serviceFee: 32000,
     officePrice: 80000,
     totalPrice: 320000,
@@ -4390,7 +4056,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9cee6135c6317cc85a1f0"),
     serviceFee: 195000,
     officePrice: 650000,
     totalPrice: 1950000,
@@ -4399,7 +4064,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5caa269d78f39c57175c5126"),
     serviceFee: 5000,
     officePrice: 50000,
     totalPrice: 50000,
@@ -4408,7 +4072,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5cab5a7d926efe1ac0fcec4e"),
     serviceFee: 10000,
     officePrice: 50000,
     totalPrice: 100000,
@@ -4417,7 +4080,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5cac0fe40ff43a171c6b8c06"),
     serviceFee: 10000,
     officePrice: 50000,
     totalPrice: 100000,
@@ -4426,7 +4088,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5cadf67a19b80424711ffbdf"),
     serviceFee: 50000,
     officePrice: 500000,
     totalPrice: 500000,
@@ -4435,7 +4096,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb02bfacdd1f208f88942b5"),
     serviceFee: 5000,
     officePrice: 50000,
     totalPrice: 50000,
@@ -4444,7 +4104,6 @@ const payments = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb1d4b0fe3ffa0bd08fb259"),
     serviceFee: 15000,
     officePrice: 50000,
     totalPrice: 150000,
@@ -4457,7 +4116,6 @@ const payments = [
 
 const payoutPendings = [
   {
-    _id: ObjectId("5ca6130018dc9918808b566c"),
     status: "paid",
     host: ObjectId("5c973c0bf4b1381a4a117f3a"),
     money: 1188000,
@@ -4465,7 +4123,6 @@ const payoutPendings = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88c63cffdda56ea16dcaf"),
     status: "paid",
     host: ObjectId("5c973c0bf4b1381a4a117f3a"),
     money: 1260000,
@@ -4473,7 +4130,6 @@ const payoutPendings = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca88d4d78f39c57175c511b"),
     status: "paid",
     host: ObjectId("5c988f55d63cee34458b09f5"),
     money: 180000,
@@ -4481,7 +4137,6 @@ const payoutPendings = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca9cfb1135c6317cc85a1f4"),
     status: "paid",
     host: ObjectId("5c973c0bf4b1381a4a117f3a"),
     money: 3645000,
@@ -4489,7 +4144,6 @@ const payoutPendings = [
     __v: 0
   },
   {
-    _id: ObjectId("5cab75e578f39c57175c512c"),
     status: "paid",
     host: ObjectId("5c988f55d63cee34458b09f5"),
     money: 45000,
@@ -4497,7 +4151,6 @@ const payoutPendings = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb02fa49d37c422c07fda1b"),
     status: "unpaid",
     host: ObjectId("5c9edd213a7e4905ac5f6fe6"),
     money: 225000,
@@ -4505,7 +4158,6 @@ const payoutPendings = [
     __v: 0
   },
   {
-    _id: ObjectId("5cb1e3e0fe3ffa0bd08fb25d"),
     status: "unpaid",
     host: ObjectId("5c973c0bf4b1381a4a117f3a"),
     money: 450000,
@@ -4517,7 +4169,6 @@ const payoutPendings = [
 
 const paypalInformations = [
   {
-    _id: ObjectId("5c935886f3db480b60662303"),
     email: "hiepnb97@gmail.com",
     createdAt: ISODate("2019-03-21T09:25:26.787Z"),
     __v: 0
@@ -4527,252 +4178,202 @@ const paypalInformations = [
 
 const pricings = [
   {
-    _id: ObjectId("5c9072f72e5e350580be85a6"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c90af9073c36f0e0ca0f1ef"),
     basePrice: 200000,
     __v: 0
   },
   {
-    _id: ObjectId("5c93b651ba54c40e50e4a87a"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c93b68ec72894068895bdc4"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c93b70a123abf22f4662006"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c93b8db586ad30548231b40"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c93b915fc76560f480b4264"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c93bb42fc76560f480b426f"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c93bb7ffc76560f480b427a"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c93bfbb4020061cd4ff20d7"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9451301b99540b24252a1e"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9452098259b200a861d2e8"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9741ffca22b41b5bf2559a"),
     basePrice: 500000,
     __v: 0
   },
   {
-    _id: ObjectId("5c97700e37acf615004b5b8c"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98923cd63cee34458b09f8"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98e8fdc54a9e3df2dc4ccf"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98ef569acaf30bc4da7a04"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98f1f29acaf30bc4da7a0d"),
     basePrice: 300000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98f28d9acaf30bc4da7a16"),
     basePrice: 500000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98f410c54a9e3df2dc4cd5"),
     basePrice: 80000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98f80fc54a9e3df2dc4ce5"),
     basePrice: 300000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98f969c54a9e3df2dc4cf8"),
     basePrice: 410000,
     __v: 0
   },
   {
-    _id: ObjectId("5c98fd22c54a9e3df2dc4d0a"),
     basePrice: 320000,
     __v: 0
   },
   {
-    _id: ObjectId("5c99975bc54a9e3df2dc4d19"),
     basePrice: 425000,
     __v: 0
   },
   {
-    _id: ObjectId("5c999873c54a9e3df2dc4d24"),
     basePrice: 1375000,
     __v: 0
   },
   {
-    _id: ObjectId("5c999a17c54a9e3df2dc4d32"),
     basePrice: 2500000,
     __v: 0
   },
   {
-    _id: ObjectId("5c999bcbc54a9e3df2dc4d3f"),
     basePrice: 650000,
     __v: 0
   },
   {
-    _id: ObjectId("5c999cc7c54a9e3df2dc4d4d"),
     basePrice: 500000,
     __v: 0
   },
   {
-    _id: ObjectId("5c999fe9c54a9e3df2dc4d60"),
     basePrice: 250000,
     __v: 0
   },
   {
-    _id: ObjectId("5c99a1a8c54a9e3df2dc4d6f"),
     basePrice: 250000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a1d74c54a9e3df2dc4d94"),
     basePrice: 500000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3956c54a9e3df2dc4da5"),
     basePrice: 300000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3b13c54a9e3df2dc4db8"),
     basePrice: 500000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3cf2c54a9e3df2dc4dc7"),
     basePrice: 1000000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a3e96c54a9e3df2dc4dda"),
     basePrice: 450000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a41cbc54a9e3df2dc4dea"),
     basePrice: 150000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4858c54a9e3df2dc4dfb"),
     basePrice: 200000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a495ec54a9e3df2dc4e0e"),
     basePrice: 350000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4b38c54a9e3df2dc4e21"),
     basePrice: 150000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4d3ac54a9e3df2dc4e34"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9a4e60c54a9e3df2dc4e44"),
     basePrice: 800000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b15c7c54a9e3df2dc4e55"),
     basePrice: 250000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b16f6c54a9e3df2dc4e65"),
     basePrice: 100000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1872c54a9e3df2dc4e78"),
     basePrice: 250000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1a28c54a9e3df2dc4e8a"),
     basePrice: 230000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b1c3dc54a9e3df2dc4e9d"),
     basePrice: 200000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b3434c54a9e3df2dc4eac"),
     basePrice: 50000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b35ccc54a9e3df2dc4ebf"),
     basePrice: 70000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b39b3c54a9e3df2dc4ed2"),
     basePrice: 3000000,
     __v: 0
   },
   {
-    _id: ObjectId("5c9b3d30c54a9e3df2dc4ee5"),
     basePrice: 1000000,
     __v: 0
   },
@@ -4781,35 +4382,30 @@ const pricings = [
 
 const revenues = [
   {
-    _id: ObjectId("5ca48cc09efc0219682155f2"),
     total: 6543000,
     withdrawable: 0,
     host: ObjectId("5c973c0bf4b1381a4a117f3a"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca48cc09efc0219682155f3"),
     total: 225000,
     withdrawable: 0,
     host: ObjectId("5c988f55d63cee34458b09f5"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca48cc09efc0219682155f4"),
     total: 0,
     withdrawable: 0,
     host: ObjectId("5c9890b2d63cee34458b09f6"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca48cc19efc0219682155f5"),
     total: 0,
     withdrawable: 0,
     host: ObjectId("5c9a30c8c54a9e3df2dc4da3"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca48cc19efc0219682155f8"),
     total: 370000,
     withdrawable: 135000,
     host: ObjectId("5c9edd213a7e4905ac5f6fe6"),
@@ -4820,7 +4416,6 @@ const revenues = [
 
 const reviews = [
   {
-    _id: ObjectId("5ca204da8f05f612a8ae607e"),
     pictures: [
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9edd213a7e4905ac5f6fe6/review/44639176_2009766055798348_2999842138641924096_n.jpg",
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9edd213a7e4905ac5f6fe6/review/43534318_1861890500596067_2535080751129427968_n.jpg"
@@ -4837,7 +4432,6 @@ const reviews = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca209108f05f612a8ae607f"),
     pictures: [
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9edd213a7e4905ac5f6fe6/review/44890960_1340249942809603_1459956145228611584_n.jpg",
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9edd213a7e4905ac5f6fe6/review/11262400.jpg",
@@ -4857,7 +4451,6 @@ const reviews = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca35e99dcff777e5e3a326b"),
     pictures: [
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c973c0bf4b1381a4a117f3a/review/4_Gas_Tower_Conference_Room_.jpg"
     ],
@@ -4873,7 +4466,6 @@ const reviews = [
     __v: 0
   },
   {
-    _id: ObjectId("5ca4900a90485c1d032a12c9"),
     pictures: [
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c973c0bf4b1381a4a117f3a/review/52650489_383607429106084_4146650569051734016_n.jpg"
     ],
@@ -4889,7 +4481,6 @@ const reviews = [
     __v: 0
   },
   {
-    _id: ObjectId("5cae0e544519170afcb8bb66"),
     pictures: [],
     text: "Địa chỉ hơi xa. Không gian thoáng đãng",
     stars: 4.25,
@@ -4903,7 +4494,6 @@ const reviews = [
     __v: 0
   },
   {
-    _id: ObjectId("5caed4e8ff71d916c8f6243c"),
     pictures: [],
     text: "test",
     stars: 3,
@@ -4917,7 +4507,6 @@ const reviews = [
     __v: 0
   },
   {
-    _id: ObjectId("5caed50bff71d916c8f6243e"),
     pictures: [
       "https://batah.s3.ap-southeast-1.amazonaws.com/5c9edd213a7e4905ac5f6fe6/review/43879831_480357139039269_8684713525106442240_n.jpg"
     ],
@@ -4933,7 +4522,6 @@ const reviews = [
     __v: 0
   },
   {
-    _id: ObjectId("5caf868419b80424711ffc3b"),
     pictures: [],
     text: "asdfasdfa",
     stars: 3,
@@ -4951,244 +4539,209 @@ const reviews = [
 
 const views = [
   {
-    _id: ObjectId("5ca0373cb8756d1dbc3ef7f9"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c999a17c54a9e3df2dc4d34"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373cb8756d1dbc3ef7fa"),
     numView: 2,
     numBooking: 0,
     office: ObjectId("5c999bcbc54a9e3df2dc4d41"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373cb8756d1dbc3ef7fb"),
     numView: 17,
     numBooking: 2,
     office: ObjectId("5c999cc7c54a9e3df2dc4d4f"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef7fc"),
     numView: 2,
     numBooking: 0,
     office: ObjectId("5c999fe9c54a9e3df2dc4d62"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef7fd"),
     numView: 8,
     numBooking: 4,
     office: ObjectId("5c99a1a8c54a9e3df2dc4d71"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef7fe"),
     numView: 21,
     numBooking: 1,
     office: ObjectId("5c9a0a6ac54a9e3df2dc4d84"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef7ff"),
     numView: 2,
     numBooking: 0,
     office: ObjectId("5c9a1d74c54a9e3df2dc4d96"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef800"),
     numView: 3,
     numBooking: 0,
     office: ObjectId("5c9a3956c54a9e3df2dc4da7"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef801"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9a3b13c54a9e3df2dc4dba"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef802"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9a3cf2c54a9e3df2dc4dc9"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef803"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9a3e96c54a9e3df2dc4ddc"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef804"),
     numView: 2,
     numBooking: 0,
     office: ObjectId("5c9a41cbc54a9e3df2dc4dec"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef805"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9a4858c54a9e3df2dc4dfd"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef806"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9a495ec54a9e3df2dc4e10"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef807"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9a4b38c54a9e3df2dc4e23"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef808"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9a4d3ac54a9e3df2dc4e36"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373db8756d1dbc3ef809"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9a4e60c54a9e3df2dc4e46"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef80a"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9b15c7c54a9e3df2dc4e57"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef80b"),
     numView: 3,
     numBooking: 0,
     office: ObjectId("5c9b16f6c54a9e3df2dc4e67"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef80c"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9b1872c54a9e3df2dc4e7a"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef80d"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9b1a28c54a9e3df2dc4e8c"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef80e"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9b1c3dc54a9e3df2dc4e9f"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef80f"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9b3434c54a9e3df2dc4eae"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef810"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9b35ccc54a9e3df2dc4ec1"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef811"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9b39b3c54a9e3df2dc4ed4"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef812"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9b3d30c54a9e3df2dc4ee7"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef813"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9b406fc54a9e3df2dc4ef6"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef814"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9b4303c54a9e3df2dc4f03"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef815"),
     numView: 0,
     numBooking: 0,
     office: ObjectId("5c9b43ccc54a9e3df2dc4f07"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca0373eb8756d1dbc3ef816"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5c9b44b4c54a9e3df2dc4f14"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca088fd4d6f032c9a1bd132"),
     office: ObjectId("5ca088184433ea13b4adf847"),
     numView: 148,
     numBooking: 7
   },
   {
-    _id: ObjectId("5ca6307e90485c1d032a12de"),
     numView: 14,
     numBooking: 1,
     office: ObjectId("5ca6307e90485c1d032a12d0"),
     __v: 0
   },
   {
-    _id: ObjectId("5ca9cd33135c6317cc85a1ed"),
     numView: 9,
     numBooking: 1,
     office: ObjectId("5ca9cd33135c6317cc85a1dd"),
     __v: 0
   },
   {
-    _id: ObjectId("5caf656b19b80424711ffbed"),
     numView: 1,
     numBooking: 0,
     office: ObjectId("5caf656b19b80424711ffbec"),
     __v: 0
   },
   {
-    _id: ObjectId("5caf667519b80424711ffc0e"),
     numView: 2,
     numBooking: 0,
     office: ObjectId("5caf667519b80424711ffc0d"),

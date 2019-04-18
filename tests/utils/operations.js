@@ -27,12 +27,6 @@ export const REQ_RESETPASSWORD = gql`
   }
 `;
 
-export const RESET_PASSWORD = gql`
-  mutation($token: String!, $password: String!) {
-    resetPassword(token: $token, password: $password)
-  }
-`;
-
 export const LOGIN_GOOGLE = gql`
   mutation($token: String!) {
     loginGoogle(token: $token) {
@@ -131,44 +125,56 @@ export const UPDATE_PROFILE = gql`
 `;
 
 export const UPDATE_IDENTITY = gql`
-  mutation($identity: [String!]!) {
-    updateIdentity(identity: $identity) {
-      email
-      firstName
-      lastName
-      phone
-      identity
-      avatar
-      address
-    }
+  mutation($email: String!) {
+    reqResetPassword(email: $email)
   }
 `;
 
 export const CREATE_BOOKING = gql`
-  mutation($bookedSchedules: BookedScheduleInput!) {
-    createBooking(bookedSchedules: $bookedSchedules) {
-      id
-      createdAt
-      firstName
-      lastName
-      email
-      phone
-      identity
-      bookedSchedules {
-        slots
-      }
-      payment {
-        totalPrice
-      }
-      office {
-        title
-        address
-        host {
-          firstName
-          lastName
-        }
-      }
-    }
+    mutation($email: String!) {
+    reqResetPassword(email: $email)
+  }
+`;
+
+export const CREATE_BOOK_SCHEDULE = gql`
+  mutation($email: String) {
+    reqResetPassword(email: $email)
+  }
+`;
+
+export const CREATE_PAYMENT = gql`
+  mutation($email: String) {
+    reqResetPassword(email: $email)
+  }
+`;
+
+export const CREATE_PAYMENT_ACCOUNT = gql`
+  mutation($email: String) {
+    reqResetPassword(email: $email)
+  }
+`;
+
+export const CREATE_PAYPAL_INFORMATION = gql`
+  mutation($email: String) {
+    reqResetPassword(email: $email)
+  }
+`;
+
+export const CREATE_CREDITCARD_INFORMATION = gql`
+  mutation($email: String) {
+    reqResetPassword(email: $email)
+  }
+`;
+
+export const SEND_ADMIN = gql`
+  mutation($email: String) {
+    reqResetPassword(email: $email)
+  }
+`;
+
+export const CREATE_REVENUE = gql`
+  mutation($email: String) {
+    reqResetPassword(email: $email)
   }
 `;
 
@@ -390,38 +396,8 @@ export const REJECT_OFFICE = gql`
 `;
 
 export const CREATE_REVIEW = gql`
-  mutation(
-    $text: String!
-    $cleanliness: Int!
-    $accuracy: Int!
-    $location: Int!
-    $checkIn: Int!
-    $office: String!
-    $pictures: [String!]
-  ) {
-    createReview(
-      text: $text
-      cleanliness: $cleanliness
-      accuracy: $accuracy
-      location: $location
-      checkIn: $checkIn
-      office: $office
-      pictures: $pictures
-    ) {
-      id
-      text
-      stars
-      cleanliness
-      accuracy
-      location
-      checkIn
-      pictures
-      user {
-        avatar
-        firstName
-        lastName
-      }
-    }
+   mutation($email: String) {
+    reqResetPassword(email: $email)
   }
 `;
 
@@ -447,6 +423,24 @@ export const SEARCH_OFFICE = gql`
     }
   }
 `;
+
+export const SEARCH_OFFICE_BY_FILTER = gql`
+  query($id: [ID!]!, $minNumSeats: Int, $maxNumSeats: Int, $amenities: [String!]) {
+    searchOfficeByFilter(
+      id: $id
+      minNumSeats: $minNumSeats
+      maxNumSeats: $maxNumSeats
+      amenities: $amenities
+    ) {
+      id
+      title
+      address
+      category
+      numSeats
+    }
+  }
+`;
+
 export const GET_BOOKMARKS = gql`
   query {
     getBookmarks {
@@ -652,16 +646,6 @@ export const CREATE_MESSAGE = gql`
   }
 `;
 
-export const SEND_ADMIN = gql`
-  mutation($content: String!) {
-    sendAdmin(content: $content) {
-      id
-      content
-      createdAt
-    }
-  }
-`;
-
 export const UPDATE_MESSAGE = gql`
   mutation($id: ID!) {
     updateMessage(id: $id) {
@@ -672,20 +656,17 @@ export const UPDATE_MESSAGE = gql`
 `;
 
 export const SET_PASSWORD = gql`
-  mutation($password: String!, $confirmPassword: String!) {
-    setPassword(password: $password, confirmPassword: $confirmPassword) {
-      id
-      email
-      firstName
-      lastName
-      avatar
-      userType
-      identity
-      role
-      bookmarks
-    }
+  mutation($email: String!) {
+    reqResetPassword(email: $email)
   }
 `;
+
+export const CREATE_VIEW = gql`
+  mutation($email: String) {
+    reqResetPassword(email: $email)
+  }
+`;
+
 export const CHANGE_PASSWORD = gql`
   mutation(
     $currentPassword: String!
@@ -723,6 +704,12 @@ export const WITHDRAW_REVENUE = gql`
         status
       }
     }
+  }
+`;
+
+export const RESET_PASSWORD = gql`
+  mutation($email: String!) {
+    reqResetPassword(email: $email)
   }
 `;
 
