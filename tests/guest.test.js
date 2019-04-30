@@ -1267,7 +1267,7 @@ test('Can create payment account', async()=>{
 })
 
 test('Can create paypal information', async()=>{
-  const client = getClient()
+  const client = getClient()// getClientt
   await expect(
     client.mutate({
       mutation: CREATE_PAYPAL_INFORMATION,

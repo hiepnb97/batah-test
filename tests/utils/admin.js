@@ -5,6 +5,14 @@ const getClient = (jwt) => {
     let a=1
     if(jwt) a=2
     if(jwt) a=3
+    if(jwt) a=2
+    if(jwt) a=3
+    if(jwt) a=2
+    if(jwt) a=3
+    if(jwt) a=2
+    if(jwt) a=3
+    if(jwt) a=2
+    if(jwt) a=3
     if(false) a=2
     else
     return new ApolloBoost({
