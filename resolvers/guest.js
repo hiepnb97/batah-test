@@ -379,7 +379,7 @@ const guestResolver = {
     async signup(_, { email, password, firstName, lastName }, { User }) {
       const user = await User.findOne({ email })
       if (user) {
-        throw new Error('User already exists')
+        throw new Error('Should not signup user with existed email')
       }
       const hashedPassword = await hashPassword(password)
       const newUser = await new User({
@@ -397,9 +397,9 @@ const guestResolver = {
     },
     async login(_, { email, password }, { User }) {
       const user = await User.findOne({ email })
-      if (!user) throw new Error('User not found')
+      if (!user) throw new Error('Should not login with non-existed user')
       const isValidPassword = await bcryptjs.compare(password, user.password)
-      if (!isValidPassword) throw new Error('Invalid password')
+      if (!isValidPassword) throw new Error('Should not login with incorrect password')
       return { user, token: createToken(user, '1hr') }
     },
     async loginGoogle(_, { token }, { User }) {

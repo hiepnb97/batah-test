@@ -34,7 +34,7 @@ test('Should not login with incorrect password', async()=>{
   await expect( client.mutate({
     mutation: LOGIN,
     variables: {email: 'pnbao96@gmail.com', password:'wrongpassword'}
-  })).rejects.toThrow()
+  })).rejects.toThrow('Should not login with incorrect password')
 })
 
 test('Should not login with non-existed user', async()=>{
@@ -44,7 +44,7 @@ test('Should not login with non-existed user', async()=>{
       mutation: LOGIN,
       variables: {email: 'non-existed@gmail.com', password:'123456'}
     }
-  )).rejects.toThrow()
+  )).rejects.toThrow('Should not login with non-existed user')
 })
 
 test('Should not signup user with existed email', async()=>{
@@ -54,7 +54,7 @@ test('Should not signup user with existed email', async()=>{
       mutation: SIGNUP_USER,
       variables: {email: 'pnbao96@gmail.com', password:'bobobob',firstName:'Bao',lastName:'Phan Nguyen'}
     }
-  )).rejects.toThrow()
+  )).rejects.toThrow('Should not signup user with existed email')
 })
 
 test('Should request reset password', async()=>{
